@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import imglogo2 from '../img/logo2.jpg';
+import Imglogo2 from '../img/logo2.jpg';
 
 function Login(){
     const [id,setId] = useState('');
@@ -33,7 +33,7 @@ function Login(){
             <div style={{backgroundColor:'rgb(245,245,245)', position:'absolute', top:'0.6%', left:'0%',width:'100%', height:'94.4%'}}>
                 <div style={{backgroundColor:'rgb(239,239,239,0.6)', margin:'auto', marginTop:'4%',width:'23%',height:'50%', paddingTop:'10px'}}>
                     <div style={{backgroundColor:'white', border:'1px solid lightgray', margin:'3%', height:'96%', display:'flex', flexFlow:'column nowrap', borderBottom:'10%'}}>
-                        <img src={imglogo2} style={{width:'250px', margin:'auto', marginTop:'12%'}} alt=''/>
+                        <img src={Imglogo2} style={{width:'250px', margin:'auto', marginTop:'12%'}} alt=''/>
                         <div style={{color:'rgb(198,16,101)', fontSize:'30px', fontWeight:'bold', margin:'auto', marginTop:'-2%'}}>통합로그인</div>
                         <div style={{color:'grey', fontSize:'16px', margin:'auto', marginTop:'-5%'}}>POSTECH 구성원 서비스</div>
                     

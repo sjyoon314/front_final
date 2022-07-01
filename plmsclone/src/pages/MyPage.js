@@ -5,9 +5,9 @@ import Frame from '../components/Frame';
 import Footer from '../components/Footer';
 import Notice from '../components/Notice';
 import Course from '../components/Course';
-import imgVMIcon0 from '../img/VMIcon0.jpg';
-import imgVMIcon1 from '../img/VMIcon1.jpg';
-import imgMI from '../img/M1.jpg';
+import ImgVMIcon0 from '../img/VMIcon0.jpg';
+import ImgVMIcon1 from '../img/VMIcon1.jpg';
+import ImgMI from '../img/M1.jpg';
 
 function MyPage(){
     const [viewmode, setViewmode] = useState(0);
@@ -25,11 +25,11 @@ function MyPage(){
                             <div style={{display:'flex', flexFlow:'row nowrap', justifyContent:'space-around'}}>
                                 <Button style={{marginRight:'3px', width:'80px'}}>나의 강좌</Button>
                                 <Button style={{marginRight:'3px', width:'80px'}}>청강 신청</Button>
-                                <Button onClick={()=>{setViewmode(0)}} style={{border:'solid lightgrey 1px'}}><img src={imgVMIcon0} width='20px' alt=''></img></Button>
-                                <Button onClick={()=>{setViewmode(1)}} style={{border:'solid lightgrey 1px', borderLeft:'0'}}><img src={imgVMIcon1} width='20px' alt=''></img></Button>
+                                <Button onClick={()=>{setViewmode(0)}} style={{border:'solid lightgrey 1px'}}><img src={ImgVMIcon0} width='20px' alt=''></img></Button>
+                                <Button onClick={()=>{setViewmode(1)}} style={{border:'solid lightgrey 1px', borderLeft:'0'}}><img src={ImgVMIcon1} width='20px' alt=''></img></Button>
                             </div>
                         </div>
-                        <p style={{marginLeft:'5%', marginTop:'-25px', color:'rgb(23,162,184)', fontSize:'15px', fontWeight:'bold'}}><img src={imgMI} width='15px' alt=''/>&nbsp;강의 시작 14일 전, 강의 종료 14일 후까지 표시됩니다.</p>
+                        <p style={{marginLeft:'5%', marginTop:'-25px', color:'rgb(23,162,184)', fontSize:'15px', fontWeight:'bold'}}><img src={ImgMI} width='15px' alt=''/>&nbsp;강의 시작 14일 전, 강의 종료 14일 후까지 표시됩니다.</p>
                         <div style={{width:'92%', height:'70%', marginLeft:'5%', display:'flex', flexFlow:'column nowrap'}}>
                             <Link to='/main/course1' style={{textDecoration:'none'}}><Course state='2' clsName='test1 (TEST101-01)' profName='test1 [directed]'></Course></Link>
                             <Link to='/main/error' style={{textDecoration:'none'}}><Course state='2' clsName='test2 (TEST102-01)' profName='test2 [not directed]'></Course></Link>

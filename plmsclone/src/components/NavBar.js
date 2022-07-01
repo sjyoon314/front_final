@@ -1,54 +1,54 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import imgnav1 from '../img/nav1.jpg';
-import imgnav2 from '../img/nav2.jpg';
-import imgnav3 from '../img/nav3.jpg';
-import imgnav4 from '../img/nav4.jpg';
-import imgnav6 from '../img/nav6.jpg';
-import imgnav7 from '../img/nav7.jpg';
-import imgnav8 from '../img/nav8.jpg';
+import Imgnav1 from '../img/nav1.jpg';
+import Imgnav2 from '../img/nav2.jpg';
+import Imgnav3 from '../img/nav3.jpg';
+import Imgnav4 from '../img/nav4.jpg';
+import Imgnav6 from '../img/nav6.jpg';
+import Imgnav7 from '../img/nav7.jpg';
+import Imgnav8 from '../img/nav8.jpg';
 
 function NavBar() {
     return(
         <Nav>
             <Link to='/main/mypage'>
             <NavCell>
-                <Img src={imgnav1}/>
+                <Img src={Imgnav1}/>
                 <NavText>My page</NavText>
             </NavCell></Link>
             <Link to='/main/error'>
             <NavCell>
-                <Img src={imgnav2}/>
+                <Img src={Imgnav2}/>
                 <NavText>정규 강좌</NavText>
             </NavCell></Link>
             <Link to='/main/error'>
             <NavCell>
-                <Img src={imgnav3}/>
+                <Img src={Imgnav3}/>
                 <NavText>비정규강좌</NavText>
             </NavCell></Link>
             <Link to='/main/error'>
             <NavCell>
-                <Img src={imgnav4}/>
+                <Img src={Imgnav4}/>
                 <NavText>오픈강좌</NavText>
             </NavCell></Link>
             <Link to='/main/error'>
             <NavCell>
-                <Img src={imgnav3}/>
+                <Img src={Imgnav3}/>
                 <NavText>지식커뮤니티</NavText>
             </NavCell></Link>
             <Link to='/main/message' style={{textDecoration:'none'}}>
             <NavCell>
-                <Img src={imgnav6}/>
+                <Img src={Imgnav6}/>
                 <NavText>쪽지 [directed]</NavText>
             </NavCell></Link>
             <Link to='/main/error'>
             <NavCell>
-                <Img src={imgnav7}/>
+                <Img src={Imgnav7}/>
                 <NavText>매뉴얼</NavText>
             </NavCell></Link>
             <Link to='/main/error'>
             <NavCell>
-                <Img src={imgnav8}/>
+                <Img src={Imgnav8}/>
                 <NavText>이용안내</NavText>
             </NavCell></Link>
         </Nav>

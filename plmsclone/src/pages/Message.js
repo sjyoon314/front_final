@@ -2,7 +2,8 @@ import Frame from '../components/Frame';
 import Footer from '../components/Footer';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import imgChome from '../img/Chome.png';
+import ImgChome from '../img/Chome.png';
+import ImgPguestIconS from '../img/PguestIconS.jpg';
 
 function Message() {
     const B = (props) => <text style={{fontWeight:'bold'}}>{props.children}</text>
@@ -13,7 +14,7 @@ function Message() {
             <div style={{display:'flex', flexFlow:'column nowrap', height:'1000px', width:'100%'}}>
                 <DivM>
                     <div style={{display:'flex', flexFlow:'row nowrap'}}>
-                        <Link to='/main/mypage'><img src={imgChome} style={{width:'17px', height:'15px', marginTop:'19px'}} alt=''/></Link>
+                        <Link to='/main/mypage'><img src={ImgChome} style={{width:'17px', height:'15px', marginTop:'19px'}} alt=''/></Link>
                         <p style={{marginLeft:'10px', fontWeight:'bold', fontSize:'15   px'}}>/&nbsp;&nbsp;쪽지</p>
                     </div>
                     <div style={{borderTop:'solid lightgrey 1px', width:'97%'}}>
@@ -38,7 +39,7 @@ function Message() {
                         </Div1>
                         <Div2>쪽지는 <B>1 년</B> 동안 보관되며, <B>1 년</B> 후에는 자동 삭제됩니다.</Div2>
                         <Msg>
-                            <img src='/img/PguestIconS.jpg' style={{width:'40px', height:'40px'}} alt=''/>
+                            <img src={ImgPguestIconS} style={{width:'40px', height:'40px'}} alt=''/>
                             <div style={{marginLeft:'10px',width:'85%', display:'flex', flexFlow:'column nowrap'}}>
                                 <Name>Prof_testname</Name>
                                 <Content>https://us02web.zoom.us/j/***********?pwd=************************* 이거로 들어오세요</Content>
